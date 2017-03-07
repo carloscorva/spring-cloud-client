@@ -1,0 +1,10 @@
+---
+instances: 1
+memory: 512M
+applications:
+  - name: lucky-word
+    host: lucky-word-server
+    services:
+      - lucky-config-server
+    env:
+      SPRING_PROFILES_ACTIVE: cloud-pivotal-me
